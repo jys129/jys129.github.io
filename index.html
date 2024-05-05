@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>jys129.com</title>
-        <meta name="robots" content="noindex">
-        <style>
-            body {
-                font-size: 12px;
-            }
-            .wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 90dvh;
-                background: white;
-            }
-            .content {
-                border-radius: 1rem;
-                background: white;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="wrapper" >
-            <div class="content">
-                <center>
-                    <h1>
-                        <img src="avatar.png" width="100px"><br>
-                        Hey, world.
-                    </h1>
-                    The more, the better
-                </center>
-            </div>
-        </div>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>jys129.com</title>
+		<meta name="robots" content="noindex" />
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body onload="typeWriter()">
+		<div class="wrapper">
+			<div class="content">
+				<center>
+					<img src="avatar.png" id="avatar" />
+					<p id="title"><!--Hey, world.--></p>
+					<p id="text">Every cloud has a silver lining.</p>
+				</center>
+			</div>
+		</div>
+	</body>
 </html>

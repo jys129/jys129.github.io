@@ -1,0 +1,52 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css");
+
+body {
+	font-size: 18px;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90dvh;
+	background: white;
+}
+
+.content {
+	border-radius: 1rem;
+	background: white;
+}
+
+#avatar {
+    width: 150px;
+    padding: 10px;
+}
+
+#text {
+    font-family: "Source Code Pro'", "NanumSquareNeo", san-serif;
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px;
+    color: black;
+}
+
+#title {
+    font-family: "NanumSquareNeo", san-serif;
+    font-size: 40px;
+    padding: 0px;
+    margin: 10px;
+    color: #7d7d7d;
+}
+
+/*
+font-family: 'NanumSquareNeoLight';
+font-family: 'NanumSquareNeo';
+font-family: 'NanumSquareNeoBold';
+font-family: 'NanumSquareNeoExtraBold';
+font-family: 'NanumSquareNeoHeavy';
+*/
