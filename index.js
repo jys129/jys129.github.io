@@ -4,6 +4,10 @@ var textArray = [
 	"No pain No gain",
 	"Fortune favors the brave.",
 	"Good luck does not always repeat itself.",
+	"If there is no wind, row.",
+	"Better late than never.",
+	"Where there’s a will, there’s a way.",
+	"Actions speak louder than words.",
 ];
 
 var titleString = "";
