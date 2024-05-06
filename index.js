@@ -8,6 +8,11 @@ var textArray = [
 	"Better late than never.",
 	"Where there’s a will, there’s a way.",
 	"Actions speak louder than words.",
+	"There’s no such thing as a free lunch.",
+	"Will is power.",
+	"Let bygones be bygones.",
+	"Make hay while the sun shines.",
+	"Opportunity did not knock until I built a door.",
 ];
 
 var titleString = "";
