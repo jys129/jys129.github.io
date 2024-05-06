@@ -18,6 +18,8 @@ var textArray = [
 	"The harder you work, the luckier you get.",
 	"Strike while the iron is hot.",
 	"You can’t have your cake and eat it too.",
+	"Don’t make a mountain out of an anthill.",
+	"Better late than never.",
 ];
 
 var titleString = "";
