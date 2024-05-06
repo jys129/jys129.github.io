@@ -13,6 +13,11 @@ var textArray = [
 	"Let bygones be bygones.",
 	"Make hay while the sun shines.",
 	"Opportunity did not knock until I built a door.",
+	"When one door shuts, another opens.",
+	"Learn to walk before you run.",
+	"The harder you work, the luckier you get.",
+	"Strike while the iron is hot.",
+	"You can’t have your cake and eat it too.",
 ];
 
 var titleString = "";
