@@ -23,24 +23,33 @@ html {
 }
 
 #avatar {
-    width: 150px;
-    padding: 10px;
+	width: 150px;
+	padding: 10px;
 }
 
 #text {
-    font-family: "Source Code Pro'", "NanumSquareNeo", san-serif;
-    font-size: 15px;
-    margin: 0px;
-    padding: 10px;
-    color: black;
+	font-family: "NanumSquareNeo", san-serif;
+	font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 10px 10px 10px;
+	color: black;
 }
 
 #title {
-    font-family: "NanumSquareNeo", san-serif;
-    font-size: 40px;
-    padding: 0px;
-    margin: 10px;
-    color: #7d7d7d;
+	font-family: "NanumSquareNeo", san-serif;
+	font-size: 40px;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 10px 10px 10px;
+	color: #7d7d7d;
+}
+
+#mail {
+	font-family: "NanumSquareNeo", san-serif;
+	font-size: 12px;
+	padding: 0px 0px 0px 0px;
+	margin: 8px 0px 0px 0px;
+	color: #7d7d7d;
+    visibility: hidden;
 }
 
 /*

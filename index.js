@@ -1,11 +1,62 @@
-var i = 0;
-var txt = "Hey, World."; /* The text */
-var speed = 100; /* The speed/duration of the effect in milliseconds */
+var titleArray = ["Hey, World."];
+var textArray = [
+	"Every cloud has a silver lining.",
+	"No pain No gain",
+	"Fortune favors the brave.",
+	"Good luck does not always repeat itself.",
+];
 
-function typeWriter() {
-	if (i < txt.length) {
-		document.getElementById("title").innerHTML += txt.charAt(i);
-		i++;
-		setTimeout(typeWriter, speed);
+var titleString = "";
+var textString = "";
+
+var titlePos = 0;
+var textPos = 0;
+var titleSpeed = 100; /* The speed/duration of the effect in milliseconds */
+var textSpeed = 5; /* The speed/duration of the effect in milliseconds */
+
+var textDone = false;
+var titleDone = false;
+
+function start() {
+	titleString = titleArray[getRandomInt(titleArray.length)];
+	textString = textArray[getRandomInt(textArray.length)];
+
+	titleSpeed = 1000 / titleString.length;
+	textSpeed = 1000 / textString.length;
+
+	typeTitleWriter();
+	typeTextWriter();
+}
+
+function typeTitleWriter() {
+	if (titlePos < titleString.length) {
+		document.getElementById("title").innerHTML += titleString.charAt(titlePos);
+		titlePos++;
+		setTimeout(typeTitleWriter, titleSpeed);
+	} else {
+		titleDone = true;
+		showMail();
 	}
+}
+
+function typeTextWriter() {
+	if (textPos < textString.length) {
+		document.getElementById("text").innerHTML += textString.charAt(textPos);
+		textPos++;
+		setTimeout(typeTextWriter, textSpeed);
+	} else {
+		console.log("done!");
+		textDone = true;
+		showMail();
+	}
+}
+
+function showMail() {
+	if (titleDone && textDone) {
+		document.getElementById("mail").style.visibility = "visible";
+	}
+}
+
+function getRandomInt(max) {
+	return Math.floor(Math.random() * max);
 }
