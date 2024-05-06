@@ -26,6 +26,7 @@ html {
 	width: 150px;
 	padding: 10px;
 	visibility: hidden;
+	display: none;
 }
 
 #text {
