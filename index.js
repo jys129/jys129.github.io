@@ -1,3 +1,4 @@
+var CURSOR_CHAR = "";
 var titleArray = ["Hey, World."];
 var textArray = [
 	"Every cloud has a silver lining.",
@@ -47,16 +48,16 @@ function start() {
 function typeTitleWriter() {
 	if (titlePos < titleString.length) {
 		document.getElementById("title").innerHTML =
-			document.getElementById("title").innerHTML.replace("_", "") +
+			document.getElementById("title").innerHTML.replace(CURSOR_CHAR, "") +
 			titleString.charAt(titlePos) +
-			"_";
+			CURSOR_CHAR;
 		titlePos++;
 		setTimeout(typeTitleWriter, titleSpeed);
 	} else {
 		titleDone = true;
 		document.getElementById("title").innerHTML = document
 			.getElementById("title")
-			.innerHTML.replace("_", "");
+			.innerHTML.replace(CURSOR_CHAR, "");
 		showMail();
 	}
 }
@@ -64,9 +65,9 @@ function typeTitleWriter() {
 function typeTextWriter() {
 	if (textPos < textString.length) {
 		document.getElementById("text").innerHTML =
-			document.getElementById("text").innerHTML.replace("_", "") +
+			document.getElementById("text").innerHTML.replace(CURSOR_CHAR, "") +
 			textString.charAt(textPos) +
-			"_";
+			CURSOR_CHAR;
 		textPos++;
 		setTimeout(typeTextWriter, textSpeed);
 	} else {
@@ -74,8 +75,30 @@ function typeTextWriter() {
 		textDone = true;
 		document.getElementById("text").innerHTML = document
 			.getElementById("text")
-			.innerHTML.replace("_", "");
+			.innerHTML.replace(CURSOR_CHAR, "");
 		showMail();
+		setTimeout(function () {
+			hideMail();
+			deleteTextWriter();
+		}, textSpeed * 300);
+	}
+}
+
+function deleteTextWriter() {
+	textDone = false;
+	if (textPos >= 0) {
+		document.getElementById("text").innerHTML = textString.substring(
+			0,
+			textPos
+		);
+		textPos--;
+		setTimeout(deleteTextWriter, textSpeed / 2);
+	} else {
+		console.log("done!");
+		setTimeout(function () {
+			textString = textArray[getRandomInt(textArray.length)];
+			typeTextWriter();
+		}, textSpeed * 20);
 	}
 }
 
@@ -83,6 +106,10 @@ function showMail() {
 	if (titleDone && textDone) {
 		document.getElementById("mail").style.visibility = "visible";
 	}
+}
+
+function hideMail() {
+	document.getElementById("mail").style.visibility = "hidden";
 }
 
 function getRandomInt(max) {
