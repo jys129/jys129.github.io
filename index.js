@@ -46,23 +46,35 @@ function start() {
 
 function typeTitleWriter() {
 	if (titlePos < titleString.length) {
-		document.getElementById("title").innerHTML += titleString.charAt(titlePos);
+		document.getElementById("title").innerHTML =
+			document.getElementById("title").innerHTML.replace("_", "") +
+			titleString.charAt(titlePos) +
+			"_";
 		titlePos++;
 		setTimeout(typeTitleWriter, titleSpeed);
 	} else {
 		titleDone = true;
+		document.getElementById("title").innerHTML = document
+			.getElementById("title")
+			.innerHTML.replace("_", "");
 		showMail();
 	}
 }
 
 function typeTextWriter() {
 	if (textPos < textString.length) {
-		document.getElementById("text").innerHTML += textString.charAt(textPos);
+		document.getElementById("text").innerHTML =
+			document.getElementById("text").innerHTML.replace("_", "") +
+			textString.charAt(textPos) +
+			"_";
 		textPos++;
 		setTimeout(typeTextWriter, textSpeed);
 	} else {
 		console.log("done!");
 		textDone = true;
+		document.getElementById("text").innerHTML = document
+			.getElementById("text")
+			.innerHTML.replace("_", "");
 		showMail();
 	}
 }
