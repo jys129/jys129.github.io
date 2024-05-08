@@ -2,7 +2,6 @@ var CURSOR_CHAR = "";
 var titleArray = ["Hey, World."];
 var textArray = [
 	"Every cloud has a silver lining.",
-	"No pain No gain",
 	"Fortune favors the brave.",
 	"Good luck does not always repeat itself.",
 	"If there is no wind, row.",
@@ -21,6 +20,8 @@ var textArray = [
 	"You can’t have your cake and eat it too.",
 	"Don’t make a mountain out of an anthill.",
 	"Better late than never.",
+	"Success comes to those who never give up.",
+	"The moment you give up, is the moment you let someone else win.",
 ];
 
 var titleString = "";
@@ -80,7 +81,7 @@ function typeTextWriter() {
 		setTimeout(function () {
 			hideMail();
 			deleteTextWriter();
-		}, textSpeed * 300);
+		}, titleSpeed * 200);
 	}
 }
 
