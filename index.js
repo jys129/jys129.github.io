@@ -83,7 +83,7 @@ function typeTextWriter() {
 		setTimeout(function () {
 			hideMail();
 			deleteTextWriter();
-		}, titleSpeed * 100);
+		}, titleSpeed * 50);
 	}
 }
 
