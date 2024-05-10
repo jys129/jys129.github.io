@@ -52,8 +52,8 @@ function typeTitleWriter() {
 			document.getElementById("title").innerHTML.replace(CURSOR_CHAR, "") +
 			titleString.charAt(titlePos) +
 			CURSOR_CHAR;
-		titlePos++;
 		document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML
+		titlePos++;
 		setTimeout(typeTitleWriter, titleSpeed);
 	} else {
 		titleDone = true;
