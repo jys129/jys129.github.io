@@ -38,13 +38,13 @@ html {
 	height: 20px;
 }
 
-#title_ {
+#title, #title2 {
 	font-family: "NanumSquareNeo", san-serif;
 	font-size: 40px;
 	padding: 0px 0px 0px 0px;
 	margin: 10px 10px 10px 10px;
 	color: #7d7d7d;
-	text-shadow: 4px 3px #eaeaea;
+	/*text-shadow: 4px 3px #eaeaea;*/
 }
 
 #mail {
@@ -71,15 +71,15 @@ section {
 
 h1, h2 {
 	font-family: 'Poppins';
-	font-weight: 600;
-	font-size: 7rem;
-	color: #ff9c85;
-	margin: 0;
+	/*font-weight: 600;*/
+	/*font-size: 7rem;*/
+	/*color: #ff9c85;*/
+	/*margin: 0;*/
 }
 
 h2 {
 	position: absolute;
-	top: 0;
-	left: 0;
+	/*top: 0;
+	left: 0;*/
 	opacity: .5;
 }
