@@ -38,7 +38,7 @@ html {
 	height: 20px;
 }
 
-#title {
+#title_ {
 	font-family: "NanumSquareNeo", san-serif;
 	font-size: 40px;
 	padding: 0px 0px 0px 0px;
@@ -63,31 +63,6 @@ font-family: 'NanumSquareNeoBold';
 font-family: 'NanumSquareNeoExtraBold';
 font-family: 'NanumSquareNeoHeavy';
 */
-
-* {
-  cursor: noen;
-}
-
-/ * cotton */
-#ball {
-	z-index: 9;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #ff9c85;
-	transform: translate(-20px, -20px);
-	pointer-events: none;
-	transition: width .3s, height .3s, background-color .3s, opacity .3s;
-}
-
-#ball.cotton-active {
-	width: 60px;
-	height: 60px;
-	background-color: #333;
-	opacity: .6;
-}
 
 /* models & cotton with airMode */
 section {

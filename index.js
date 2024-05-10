@@ -53,12 +53,14 @@ function typeTitleWriter() {
 			titleString.charAt(titlePos) +
 			CURSOR_CHAR;
 		titlePos++;
+		document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML
 		setTimeout(typeTitleWriter, titleSpeed);
 	} else {
 		titleDone = true;
 		document.getElementById("title").innerHTML = document
 			.getElementById("title")
 			.innerHTML.replace(CURSOR_CHAR, "");
+		document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML
 		showMail();
 	}
 }
