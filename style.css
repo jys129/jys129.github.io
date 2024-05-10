@@ -65,6 +65,10 @@ font-family: 'NanumSquareNeoHeavy';
 */
 
 /* models & cotton with airMode */
+* {
+    cursor: noen;
+}
+
 section {
 	position: relative;
 }
