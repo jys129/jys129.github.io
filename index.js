@@ -132,5 +132,5 @@ const h2 = new Cotton('h2', {
 })
 
 const cottonCursor = new Cotton('#cotton-cursor', {
-    speed: 0.1 
+    speed: 0.9 
 })
