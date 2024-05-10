@@ -6,19 +6,16 @@
 		<title>jys129.com</title>
 		<meta name="robots" content="noindex" />
 		<script src="index.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/cotton123236/cottonjs@latest/lib/cotton.min.js"></script>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body onload="start()">
 		<div class="wrapper">
 			<div class="content">
 				<center>
-				<!-- <img src="avatar.png" id="avatar" /> -->
-				<h1 class="cotton-model">airMode</h1>
-				<h2 class="cotton-model">airMode</h2>
-				<p id="title"><!--Hey, world.--></p>
-				<p id="text"><!--Every cloud has a silver lining.--></p>
-				<p id="mail">chris@jys129.com</p>
+					<img src="avatar.png" id="avatar" />
+					<p id="title"><!--Hey, world.--></p>
+					<p id="text"><!--Every cloud has a silver lining.--></p>
+					<p id="mail">chris@jys129.com</p>
 				</center>
 			</div>
 		</div>
