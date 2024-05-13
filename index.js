@@ -120,16 +120,16 @@ function getRandomInt(max) {
 }
 
 // init h1 with airMode
-const h1 = new Cotton('h1', {
-    airMode: true
-})
+// const h1 = new Cotton('h1', {
+//     airMode: true
+// })
 
 // init h2 with airMode reverse
-const h2 = new Cotton('h2', {
-    airMode: {
-        reverse: true
-    }
-})
+// const h2 = new Cotton('h2', {
+//     airMode: {
+//         reverse: true
+//     }
+// })
 
 const cottonCursor = new Cotton('#cotton-cursor', {
     speed: 0.9 
