@@ -105,7 +105,3 @@ function hideMail() {
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
-
-const cottonCursor = new Cotton("#cotton-cursor", {
-    speed: 0.9,
-});
